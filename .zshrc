@@ -112,10 +112,17 @@ source $ZSH/oh-my-zsh.sh
 # set dircolors config
 eval `dircolors ~/.config/dircolors`
 
-alias e="nvim"
+alias vim="nvim"
+alias e="vim"
 alias mc="mc -S xoria256"
+alias py="python"
+alias py3="python3"
+
 export GOPATH=$HOME/w/golang
 export PATH=$PATH:$GOPATH/bin
-ANDROID_SDK="/home/ai/soft/android_sdk/platform-tools:/home/ai/soft/android_sdk/tools:/home/ai/soft/android_sdk/bin"
-export PATH="/home/ai/soft/Sencha/Cmd:$ANDROID_SDK:$PATH"
+# ANDROID_SDK="/home/ai/soft/android_sdk/platform-tools:/home/ai/soft/android_sdk/tools:/home/ai/soft/android_sdk/bin"
+export PATH="/home/ai/soft/Sencha/Cmd:$PATH"
+export ANDROID_HOME=${HOME}/soft/android_sdk
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 export TMPDIR="/tmp"
